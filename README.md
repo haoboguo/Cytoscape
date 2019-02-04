@@ -7,6 +7,7 @@
 $ cat traps.csv | sed 's/,/ /g' | awk '{print $3,$4,$5}' | sed 's/ /,/g' > filename.csv
 
 Then only useful info will be kept including image number (IN), cell count (CC) and cell ID (ID).
+
 3. Read the csv file, we will need the starting IN (a), the full length of mother cell (b+1); the starting IN of a daughter cell i (di), and the branch length of the di (bdi+1); then use the two scripts to get a sif file
 
 $ ./sif.main.csh a b ##results in a file test.sif
